@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS - I 01 introduction</title>
+    <!-- mes styles -->
+    <link rel="stylesheet" href="../css/style.css">
+
+    <!-- script JS dans l'en-tête 
+    dans l'élément head de mon fichier à l'intérieur de la balise script. Ce code récupére l'heure actuelle et l'actualise toutes les secondes d'une part et nous perment de cacher /aficher l'heur via un button
+    -->
+    <script>
+        window.addEventListener('load',horloge);
+            function horloge(){
+                let d = new Date();
+                document.getElementById('heure').innerHTML = d.toLocaleTimeString();
+                setTimeout(horloge, 1000);
+            }            document.addEventListener('DOMContentLoaded', function(){
+                const cache = document.getElementById('bouton');
+                cache.addEventListener('click',cacheHorloge);
+                document.getElementById('tog').style.display = 'block';
+                function cacheHorloge(){
+                    let para = document.getElementById('tog');
+                    if(para.style.display == 'block'){
+                        para.style.display = 'none';
+                    }else{
+                        para.style.display = 'block';
+                    }
+                }
+            });
+
+    </script>
+</head>
+<body>
+    <div id="wrapper">
+        <h1>JS - I 01 introduction</h1>
+        <p id="tog" class="stabilo">Il est actuellement <span id="heure"></span></p>
+        <button id="button">Cacher / Afficher l'heure</button>
+    </div>
+</body>
+</html>

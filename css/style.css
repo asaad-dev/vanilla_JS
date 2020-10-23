@@ -1,0 +1,74 @@
+/* les styles du répo des cours et des exos JS - Asaad - Colombbus */
+
+body {
+    background: lightblue;
+    font: "Helvetica Neue", Helevetica, Arial, sans-serif;
+    background-image: url(../img/téléchargement.jpg);
+}
+
+/* pour surligner le texte en jaune */
+.stabilo {
+    background: #fffb01;
+    padding: 0 20px;
+    margin: 5px;
+    border-radius: 5px;
+    font-size: 1.3em;
+}
+
+#wrapper {
+    background: #fff;
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+h1 {
+    background: url(../img/bg-_black_Background-3-1-06.jpg);
+    border-radius: 10px;
+    padding: 10px;
+    color: #fff;
+    text-align: center;
+}
+
+button {
+    background: url(../img/bg-_black_Background-3-1-06.jpg);
+    padding: 20px;
+    margin: 20px 10px 20px 0;
+    font-size: 1em;
+    border-radius: 10px;
+    border: none;
+    color: #fff;
+}
+
+code {
+    color: #fffb01;
+    font-size: 1em;
+    background: url(../img/bg-_black_Background-3-1-06.jpg); 
+}
+
+caption {
+    background:url(../img/bg-_black_Background-3-1-06.jpg);
+    color: #fff;
+    font-size: 1.3em;
+    padding: 10px;
+    margin: 10px 0 10px 65px;
+    border-radius: 5px;
+    width: 350px;
+}
+
+table {
+    border-collapse: collapse;
+    margin: 1em;
+    text-align: center;
+    width: 500px;
+  
+  }
+  thead {
+      height: 50px;
+      background: #fffb01;
+  }
+
+th, td {
+    border: solid 3px;
+  }

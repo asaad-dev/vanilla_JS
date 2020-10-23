@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS - I 02 introduction</title>
+    <!-- mes styles -->
+    <link rel="stylesheet" href="../css/style.css">
+
+   <!-- on peux mettre du JS directement dans la balise ouvrante d'un élément HTML le premier script affiche une alert() une fenêtre d'alert avec son message le seconde script ajoute un élément p dans la page. Les script sont dans l'attribut onclick et le code placé là va s'éxécuter dés que l'on clique-->
+   <!-- Bien que ce soit possible il est déconseillé d'utiliser cette façon de faire -->
+</head>
+<body>
+    <div id="wrapper">
+        <h1>JS - I 02 introduction</h1>
+    
+        <button onclick="alert('Bonjour les amis !')">Cliquez sur moi</button>
+
+        <button onclick="(function(){
+            let para = document.createElement('p');
+            para.textContent='Hop ! Un paragraphe de plus !';
+            document.body.appendChild(para);
+        })();"> Ajoutez un paragraphe, allez!
+        </button>
+
+        
+    </div>
+</body>
+</html>

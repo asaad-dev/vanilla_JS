@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS - I 04 introduction</title>
+    <!-- mes styles -->
+    <link rel="stylesheet" href="../css/style.css">
+    <!-- JS en externe -->
+    <script src="../introduction.js" async></script>
+    <script src=""></script>
+   
+</head>
+<body>
+    <div id="wrapper">
+        <h1>JS - I 04 introduction</h1>
+        <button id="b1">Cliquez sur moi</button>
+        <button id="b2">Ajoutez un paragraphe</button>
+        <h2>La place du code et l'ordre d'exécution</h2>
+        <p>L'ordre d'exécution du code par le navigateur</p>
+        <p>Par défaut, un navigateur va lire et exécuter le code dans l'ordre de son écriture</p>
+        <p>Lorsque le navigateur arrive script, il va stopper le traitementdu reste du HTML jusqu'à ce que le code JavaScript soit chargé dans la page et exécuté</p>
+        <p>Résumons ce qu'il se passe dans ce cas :</p>
+        <ol>
+            <li>Le navigateur commence à analyser (ou à traiter) le code HTML</li>
+            <li>Le navigateur rencontre un élément <code>script</code></li>
+            <li>Le contenu JS est demandé et téléchargé (si il est en externe) puis exécuté. Durant tout ce temps  l'analyseur du navigateur bloque l'affichage du HTML ce qui peu ralentir, si le script est long, l'affichage de la page</li>
+            <li>Dés que le JS a été exécuté, le contenu HTML est affiché</li>
+        </ol>
+        <p>Ce souci d'attente est résolu grâce au téléchargement asynchrone des donné avec l'attribus <code>async</code> ou <code>defer</code> dans le cas oû l'on fait appel à fichiers externes.</p>
+        <h2>Le point virgule <code>;</code> est utilisé pour signifeer la fin d'une instruction(une variable, une condition, une boucle etc.)</h2>
+    </div>
+
+</body>
+</html>

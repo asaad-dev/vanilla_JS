@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS - II 03 Types de données</title>
+    <!-- mes styles -->
+    <link rel="stylesheet" href="../css/style.css">
+    <!-- script en externe -->
+    <script src="types.js" async></script>
+    
+
+</head>
+<body>
+    <div id="wrapper">
+        <h1>JS - II 03 Les types de données Javascript</h1>
+
+        <h2>1- Set types de données Javascript</h2>
+        <ol>
+            <li><a href="#string"><span class="stabilo">String</span></a>ou "chaîne de caractères"</li>
+            <li><a href="#number"><span class="stabilo">Number</span></a>ou nombre</li>
+            <li><a href="#boolean"><span class="stabilo">Boolean</span></a>ou booléen</li>
+            <li><a href="#null"><span class="stabilo">Null</span> </a>ou "vide"</li>
+            <li><a href="#undefined"><span class="stabilo">Undefined</span></a>ou "indéfini"</li>
+            <li><a href="#symbol"><span class="stabilo">Symbol</span></a>ou "symbole"</li>
+            <li><a href="#objet"><span class="stabilo">Object</span></a>ou "objet"</li>
+        </ol>
+
+        <p>Pour voir les types de données on utilise la fonction <code>typeof()</code></p>
+
+        <h3 id="string">1-String</h3>
+        <!-- p#p$*3 -->
+        <p id="p1"></p>
+        <p id="p2"></p>
+        <p id="p3"></p>
+        <h4>Sur les guillemets et les apostrophes droits et sur l'échappement</h4>
+        <p>En JavaScript, on va pouvoir utiliser indifféremment des guillemets doubles ou des quotes pour entourer une chaîne de caractères et ces deux méthodes vont être strictement équivalentes à la différence d'autres langages comme le PHP par exemple.<br>
+            Faites attention cependant à un point : si votre chaîne contient un caractère qui est le même que le délimiteur de chaine choisi, il faudra neutraliser ce caractère en l'échappant au moyen d'un antislash ou changer de délimiteur.</p>
+
+        <h3 id="number">2- Number</h3>
+        <p>Les variable en Javascript vont également pouvoir stocker des nombres. Des nomber entiers positifs ou à negatifs ou à virgule (décimaux)</p>
+
+        <h3 id="boolean">3- Boolean</h3>
+        <p>Ce type de données sera utile pour vérifier si un test est vari ou faux</p>
+        
+        <h3 id="null">4- Null</h3>
+        <p>Null, et undefinded sont des types un peu particulier</p>        
+        <ul>
+            <li><code>null</code> : absence de valeur connue.</li>
+            <li><code>undefined</code> : variable non définie.</li>        
+        </ul>        
+        <p id="p4"></p>        
+        <p id="p5"></p>
+
+        <h3 id="undefined">5- Undefined</h3>
+        <p>Si on déclare une variable sans lui attribuer de valeur, alors son type sera <code>Undefined</code>.</p>        
+        
+        <h3 id="symbol">6- Symbol</h3>
+        <p>Si on déclare une variable et qu'on lui passe null, alors son type sera <code>Object</code>.</p>
+
+        <h3 id="objet">7- Symbol et Object</h3>
+        <p>Les objets sont des structures complexes qui vont pouvoir stocker plusieurs valeurs en  même temps et que nous étudierons plus tard car il s'agit là d'un sujet  complexe à appréhender pour un débutant.</p>
+        <p>Si on déclare une variable et qu'on lui passe null, alors son type sera <code>Object</code>.</p>   
+    </div>
+</body>
+</html>
+
