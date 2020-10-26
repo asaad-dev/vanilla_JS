@@ -24,18 +24,3 @@ function ajouter() {
     para.textContent = 'Paragraphe ajouté';
     document.body.appendChild(para);
 }
-let age = 33;
-if(age <= 30) {
-//if the value of age is less than or equal to 30
-}
-else if(age > 30 && < 40) {
-    //if age is greater than 40
-    //&& - AND
-    // || OR
-}
-else if(age < 0) {
-//otherwise prevent something from happening
-}
-else {
-    //greater than 40
-}
