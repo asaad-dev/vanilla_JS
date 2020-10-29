@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>01 entrainement</title>
+    <!-- styles pour cette page -->
+    <style>
+        body {
+            background: pink;
+        }
+    </style>
+
+    <!-- script dans l'en-tête -->
+    <script>
+        document.write('<h1>01 Entrainement JS</h1>')
+
+        document.write('<h2 style="background: orange; width: 75%; color: #fff;">1- Affichage</h2>')
+
+        var maBoite; 
+        maBoite = 10;
+
+        document.write('<p> dans la variable maBoite il y a' +  maBoite + '</p>');
+        console.log(maBoite);
+
+        //console
+        console.log('Un message dans le log');
+        console.info('Une informationi à envoyer dans la console');
+
+        // alert('Cici ! Ceci est un message d\' alerte');
+
+        //boîte confirm 
+        // confirm ('Confirmez-vous')
+
+        //boîte confirm
+        // prompt('Comment ça va ?');
+        
+        // var sonChien = prompt('Quel est le prénom de votre chien ?');
+        // document.write('<p>Votre chien s\'appelle ' + sonChien  + '</p>');
+
+        // let humeur = prompt('Comment va ? ');
+        // document.write('<p>Alors ? ça va ' + humeur + '</p>');
+
+        //portée locale ou globale de la variable !!!
+        // if(true){
+        //     let nombre = 9;
+        // }
+
+        // console.log(nombre);
+        
+
+
+        var nombre2;
+        if(true) {
+            nombre2 = 18;
+        }
+        console.log(nombre2);
+
+        // addition de valeurs "String"
+        var fruits = 'pommes';
+        console.log(fruits);
+        document.write('<p> Dans mon panier j\'ai des ' + fruits + '</p>');
+
+        fruits += '- fraises';
+        console.log(fruits);
+        
+        fruits += ' - mangue'
+        console.log(fruits)
+
+        document.write(fruits);
+
+        //addition d'une variable numérique (number)
+        var noteEval = 12;
+        console.log(noteEval);
+
+        noteEval += 2;
+        console.log(noteEval)
+
+        //titre 2
+        document.write('<h2 style="background: orange; width: 75%; color: #fff;">2- Type e donnée</h2>')
+
+        var monText = 'Voci une phrase pour Audery, avec l\'apostraphe';
+        console.log(typeof monText);
+
+        document.write((typeof noteEval) + '<hr>');
+        document.write((typeof monText) + '<br>');
+
+        //titre 3
+        document.write('<h2 style="background: orange; width: 75%; color: #fff;">3- Constantes</h2>');
+
+        const BOUGE_PAS = "Ma constante impossible à modifier !"
+        document.write('<p style="background: grey">' + BOUGE_PAS + '</p>');
+        //pas le droit de la redéfinir !
+        //BOUGE_PAS = 'toto'
+
+        //titre 4
+        document.write('<h2 style="background: orange; width: 75%; color:#fff;" title="le mos qui plaît à Audrey !">4- Concaténer');
+        let prenom = 'Bruce', nom = 'Willis'
+        document.write(prenom + ' ' + nom );
+
+         //titre 
+         document.write('<h2 style="background: orange; width: 75%; color:#fff;" title="le mos qui plaît à Audrey !">5- Concaténer');
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

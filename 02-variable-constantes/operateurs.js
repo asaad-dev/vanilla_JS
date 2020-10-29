@@ -44,8 +44,26 @@ console.log(j)
 let l = 1 -(2 * 3);
 console.log(1);
 
-alert('h contient :' + h +
-    '\nk contient :' + k +
-    '\nj contient :' + j +
-    '\n1 contient :' + 1
-);
+// alert('h contient :' + h +
+//     '\nk contient :' + k +
+//     '\nj contient :' + j +
+//     '\n1 contient :' + 1
+// );
+
+//Opérateurs d'affectation
+
+let chiffre1 = 501;
+let chiffre2 = 18;
+let somme = chiffre1 * chiffre2;
+console.log(somme);
+let nom = 'Audrey';
+// console.log(typeof nom);
+
+let m = 20;
+let o = 50
+m += 15;
+console.log(m);//on ajoute 15 à la valeur stockée
+
+o *= 5;
+console.log(o);
+
