@@ -8,3 +8,5 @@
 // A program is a sequence of statements
 var foo; //This is a statement => Do nothing
 3 * 7; //This is an expression => Produce values
+
+//

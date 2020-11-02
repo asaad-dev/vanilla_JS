@@ -13,9 +13,8 @@
 
     <!-- script dans l'en-tête -->
     <script>
-        document.write('<h1>01 Entrainement JS</h1>')
-
-        document.write('<h2 style="background: orange; width: 75%; color: #fff;">1- Affichage</h2>')
+        document.write('<h1>01 Entrainement JS</h1>');
+        document.write('<h2 style="background: orange; width: 75%; color: #fff;">1- Affichage</h2>');
 
         var maBoite; 
         maBoite = 10;
@@ -24,37 +23,38 @@
         console.log(maBoite);
 
         //console
-        console.log('Un message dans le log');
-        console.info('Une informationi à envoyer dans la console');
+        // console.log('Un message dans le log');
+        // console.info('Une informationi à envoyer dans la console');
 
-        // alert('Cici ! Ceci est un message d\' alerte');
+        // // alert('Cici ! Ceci est un message d\' alerte');
 
-        //boîte confirm 
-        // confirm ('Confirmez-vous')
+        // boîte confirm();
+        // confirm('Confirmez-vous');
 
-        //boîte confirm
+        // boîte prompt();
         // prompt('Comment ça va ?');
-        
-        // var sonChien = prompt('Quel est le prénom de votre chien ?');
-        // document.write('<p>Votre chien s\'appelle ' + sonChien  + '</p>');
 
+        var sonChien;
+        // var sonChien = prompt('Quel est le prénom de votre chien ?');
+        document.write('<p>Votre chien s\'appelle ' + sonChien  + '</p>');
+
+        var humeur;
         // let humeur = prompt('Comment va ? ');
-        // document.write('<p>Alors ? ça va ' + humeur + '</p>');
+        document.write('<p>Alors ? ça va ' + humeur + '</p>');
 
         //portée locale ou globale de la variable !!!
-        // if(true){
-        //     let nombre = 9;
-        // }
-
+       if(true){
+           let nombre = 9;
+        }
         // console.log(nombre);
         
 
 
         var nombre2;
-        if(true) {
-            nombre2 = 18;
-        }
-        console.log(nombre2);
+            if(true) {
+                nombre2 = 18;
+        };
+        // console.log(nombre2);
 
         // addition de valeurs "String"
         var fruits = 'pommes';
@@ -63,7 +63,7 @@
 
         fruits += '- fraises';
         console.log(fruits);
-        
+
         fruits += ' - mangue'
         console.log(fruits)
 
@@ -80,7 +80,7 @@
         document.write('<h2 style="background: orange; width: 75%; color: #fff;">2- Type e donnée</h2>')
 
         var monText = 'Voci une phrase pour Audery, avec l\'apostraphe';
-        console.log(typeof monText);
+        // // console.log(typeof monText);
 
         document.write((typeof noteEval) + '<hr>');
         document.write((typeof monText) + '<br>');
@@ -98,9 +98,82 @@
         let prenom = 'Bruce', nom = 'Willis'
         document.write(prenom + ' ' + nom );
 
-         //titre 
-         document.write('<h2 style="background: orange; width: 75%; color:#fff;" title="le mos qui plaît à Audrey !">5- Concaténer');
+        //titre 5
+        document.write('<h2 style="background: orange; width: 75%; color:#fff;" title="le mos qui plaît à Audrey !">5- Concaténer');
 
+        //addition 
+        let addition = 10 + 15;
+        document.write('<p>Une addition : ' + addition + '</p>');
+
+        //multiplication
+        let multiplication = 10 * 15;
+        document.write('<p>Une multiplication : ' + multiplication + '</p>');
+
+        //soustraction 
+        var soustraction = 10 - 15;
+        document.write('<p> Une soustractin : ' + soustraction + '</p>');
+
+        //division 
+        var division = 10 / 5;
+        document.write('<p> Une division : ' + division + '</p>');
+        console.log(addition, multiplication, soustraction, division);
+
+        //modulo
+        var modulo = 10 % 3;
+        document.write('<p> Le modulo de 10 % 3: ' + modulo + '</p>');
+        // console.log(modulo);
+
+        //EXO 
+            document.write('<h3> Un petit exercice dans un prompt() et une alerte.</h3>');
+
+
+        /*
+            Vendredi
+            30/10/20
+
+        */
+        //CONSIGNE réaliser un prompt () demandant son âge à un utilisateur, récupérer cette donnée et l'utiliser pour afficher " vous avez xx ans"
+        // var age = prompt("Quel âge avez-vous ?");
+        // document.write('<p> Vous avez ' + age + ' ans.</p>');
+
+        document.write('<h2 style="background: orangered; width: 40%; color: #fff;">Exo 2 une valeur au cube et au carré</h2>')
+        //consigne récupérer dans un prompt() une valeur donnée par un utilisateur
+        //envoyer ensuite une alert() indiquant le résultat de cette valeur au cube puis au carré
+        
+        //alert(`Vous avez envoyé une valeur ${value} `);
+            
+        let votreChiffre = prompt('Faison un calcul, rentrez une chiffre ...') //1- invitation avec le prompt () à saisir une valeur numérique dans la pop-up
+        // console.log('votreChiffre ' + votreChiffre); //Ibis je vérifie que la ça fonction
+        // document.write('Le chiffre rentré par l\'utilisateur : ' + votreChiffre);
+
+        let auCarre = votreChiffre * votreChiffre; //2- je calcule le contenu de la variable * 2
+        let auCube = votreChiffre * votreChiffre * votreChiffre;// 3- je calcule le contenu de la variable au cube
+        // console.log(auCarre, auCarre);// vérification des calculs
+
+        alert('Vous avez saisi le chiffre : ' + votreChiffre + 'ce chiffre au carré est égal à ' + auCarre + '.');//4- j'affiche dans deux
+        alert('Vous avez saisi le chiffre : ' + votreChiffre + 'ce chiffre au cube est égal à ' + auCube + '.');
+
+        document.write('<h2 style="background: orange; width: 50%; color: #fff;">6-  LEs conditions</h2>')
+        let a = 2, b = 5, c = 2;
+        //si a est supérieur à b
+        // j'écris "a est supérieur à b"
+        //sinon j'écris "a n'est pas supérieur"
+            if(a > b) {
+            // alert('a est supérieur à b')
+            document.write('a est supérieur à b')
+            } else {
+            //   alert('a  n\'est pas supérieur b');
+            document.write('a  n\'est pas supérieur b');
+            }
+
+            //tester l'égalité de a et b
+            //puis montrer la valeur de a et b dans le document.write
+        if(a == b) {
+            document.write('<p>Pour a qui vaut ' + a + ' est b qui vaut ' + b +', a est égal à b</p>')
+            } else {
+            document.write('<p>Pour a qui vaut ' + a + ' est b qui vaut ' + b +', a n\'est égal à b</p>');
+            }
+        
     </script>
 </head>
 <body>
