@@ -374,7 +374,7 @@
             var coucou = document.write('<p> Bonjour ' + prenom2 + '. Comment vas-tu ?</p>')//une variable dans cette fonction
             return coucou;//envoié le variable
         }
-        faireCoucou(prenom2);//appel de fonction avec l'argument
+        // faireCoucou(prenom2);//appel de fonction avec l'argument
 
 
         //EX : demandez 
@@ -382,34 +382,36 @@
         //2- Quelle est la températeur ?
         //3- faites une fonction meteo() qui renvoie les réponses à ces questions
 
-        // var saison = prompt('Quelle est la saison ?');
-        // var temperature = prompt('Quelle est la température ?');
-        // // console.log(saison, temperature);
-        // function meteo (saison, temperature) {//notre fonctioon avec 2 argument qui viennent des var ci-dessus
-        //      var phrase4 = document.write('<p>Nous somme en ' + saison + ' et il fait ' + temperature + '°</p>');
-        //      return phrase4;
-        //  }
-        //  meteo(saison, temperature);
+
+        //  //meteo 1
+        //   var saison = prompt('Quelle est la saison ?');
+        //   var temperature = prompt('Quelle est la température ?');
+        //   // console.log(saison, temperature);
+        //   function meteo (saison, temperature) {//notre fonctioon avec 2 argument qui viennent des var ci-dessus
+        //        var phrase4 = document.write('<p>1- Nous somme en ' + saison + ' et il fait ' + temperature + '°</p>');
+        //        return phrase4;
+        //    }
+        // //    meteo(saison, temperature);
 
 
-         // saison 2 La même avec un if ... else
+         // meteo 2 La même avec un if ... else
          var saison = prompt('Quelle est la saison ?');
         var temperature = prompt('Quelle est la température ?');
         // console.log(saison, temperature);
         function meteo2 (saison, temperature) {//notre fonctioon avec 2 argument qui viennent des var ci-dessus
             if (saison == 'printemps') {//si la variable contient bien 'printemps'
-                var phrase4 = document.write('<p>Nous somme au ' + saison + ' et il fait ' + temperature + '°</p>');//exécute ce bloc de code
+                var phrase4 = document.write('<p>2- Nous somme au ' + saison + ' et il fait ' + temperature + '°</p>');//exécute ce bloc de code
             } else {//sinon ('c'est faut il n'y a pas printemps)
-                var phrase4 = document.write('<p>Nous somme en ' + saison + ' et il fait ' + temperature + '°</p>');
+                var phrase4 = document.write('<p>2- Nous somme en ' + saison + ' et il fait ' + temperature + '°</p>');
             }//fin if else
             
              return phrase4;
          }// fin fonction meteo2
-         meteo2(saison, temperature);
+        //  meteo2(saison, temperature);
 
 
          //meteo 3 
-         function meteo3 (saison, temperature) {
+         function meteo3 (saison, temperature) {//notre fonction avec 2 arguments 
              var article; // la variable article est vide et attend une condition
              if(saison == 'printemps') {
                  article = 'au ';
@@ -417,10 +419,97 @@
                  article = 'en ';
              }//fin du if else
 
-            return document.write('Nous sommes ' + article + saison + ' et la tempréature est de ' + temperature + '°.');
+            return document.write('3- Nous sommes ' + article + saison + ' et la température est de ' + temperature + '°C.');
          }//fin fonction meteo3
 
-         meteo3(saison, temperature);
+        //  meteo3(saison, temperature);
+
+        /*
+            Mardi
+            10/11/20
+
+        */
+
+        //  //meteo 4
+        //  //l'utilisateur rentre printemps trés bien //hiver, automne, été trés bien s'il  rentre n'importe quoi on lui 'cette saison n'existe pas
+        //  function meteo4 (saison, temperature) {
+        //      if (saison == 'printemps') {// si la variable contient bien 'printemps' est-ce VRAI ?
+        //         var phraseNew = document.write('<p>4- Nous sommes au ' + saison + ' et il fait ' + temperature + '°.</p>');// exécute ce bloc de code
+        //     } else if (saison == 'hiver' || saison =='été' || saison == 'automne') {//sinon (c'est faux il n'y a pas printemps)
+        //             var phraseNew = document.write('<p>- Nous sommes en ' + saison + ' et il fait ' + temperature + '°.</p>');// exécute cet autre bloc
+        //     } else {
+        //         var phraseNew = document.write('<p>4- La saison "' + saison + '" n\'existe pas .</p>');// exécute cet autre bloc
+        //     }
+        //     return phraseNew;
+        //  }
+        //  meteo4(saison, temperature);
+
+         /*
+            PATRICK
+        */
+
+        // if (saison == 'printemps') {// si la variable contient bien 'printemps' est-ce VRAI ?
+        //     document.write('<p>2- Nous sommes au ' + saison + ' et il fait ' + temperature + '°.</p>');// exécute ce bloc de code
+        // } else if (saison == 'hiver' || saison =='été' || saison == 'automne') {//sinon (c'est faux il n'y a pas printemps)
+        //     document.write('<p>2- Nous sommes en ' + saison + ' et il fait ' + temperature + '°.</p>');// exécute cet autre bloc
+        // } else {
+        //     document.write('<p>La saison "' + saison + '" n\'existe pas .</p>');// exécute cet autre bloc
+        // }       
+        
+        // 4ème version function         
+        function meteoIfElseIfElse(saison, temperature) {
+            if (saison == 'printemps') {// si la variable contient bien 'printemps' est-ce VRAI ?
+                    var phraseNew = document.write('<p>4- Nous sommes au ' + saison + ' et il fait ' + temperature + '°.</p>');// exécute ce bloc de code
+                } else if (saison == 'hiver' || saison =='été' || saison == 'automne') {//sinon (c'est faux il n'y a pas printemps)
+                    var phraseNew = document.write('<p>- Nous sommes en ' + saison + ' et il fait ' + temperature + '°.</p>');// exécute cet autre bloc
+                } else {
+                    var phraseNew = document.write('<p>4- La saison "' + saison + '" n\'existe pas .</p>');// exécute cet autre bloc
+                }//fin if else if else
+            return phraseNew;
+        }//fin fonction        
+        // meteoIfElseIfElse(saison, temperature);
+
+
+        // AVEC VARIABLE 
+        function meteoFin (saison, temperature) {        
+            var article2;//la variable article est vide et attend une condition 
+            if (saison == 'printemps') {// si c'est printemps
+                article2 = 'au ';//on affecte "au" à la variable
+            } else if (saison == 'hiver' || saison =='été' || saison == 'automne') {
+                article2 = 'en ';//sinon on affecte en ...
+            } else {
+                return document.write('<p>5- La saison "' + saison + '" n\'existe pas .</p>');
+            }
+            //fin du if else
+            return document.write('5- Nous sommes ' + article2 + saison + ' et la température est de ' + temperature + '°.');
+        }       
+        // meteoFin (saison, temperature);
+
+
+        //NOUVELLE CONDITION
+        //6 et 11 => primaire
+        //11 et 15 collége
+        //15 et 18 => lycée
+        //18 ou ... => chômage
+
+        let sonAge = prompt('Quel âge à votre enfant ?');
+
+        function quelleEcole (sonAge) {
+            if (sonAge < 6) {
+            var phraseAge = document.write('<p> Ton enfant a ' +  sonAge + ' an(s), il doit patienter à l\'école.</p>');
+            } else if (sonAge >= 6 && sonAge <= 11) {
+                var phraseAge = document.write('<p> Ton enfant a ' +  sonAge + ' ans, il doit s\'inscrire en primaire.</p>');
+            } else if (sonAge >= 11 && sonAge <= 15) {
+                var phraseAge = document.write('<p> Ton enfant a ' + sonAge + ' ans, il doit s\'inscrire au collége.</p>');
+            } else if (sonAge >= 15 && sonAge <= 18){
+                var phraseAge = document.write('<p> Ton enfant a ' + age + ' ans, il doit s\'inscrire au lycée.</p>');
+            } else {
+                var phraseAge = document.write('<p> Ton enfant a ' + age + 'ans, il  n\'est pas en âge scolaire !.</p>');
+            }
+            return phraseAge;
+        }
+        quelleEcole(sonAge);
+
 
     
    </script>
