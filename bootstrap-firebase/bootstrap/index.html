@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap container examples</title>
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <!-- css perso -->
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Bootstrap Framework</h1>
+  </div>
+    <div class="containerfluid alert alert-primary">
+        <h2>Here is some content inside of a container-fluid!</h2>
+        <p>A container is just a div with one of two classes: either container or container-fluid. The difference is that container elements have fixed widths that change at a finite number of break points, while container-fluid elements always take up 100% of the available width. <br>Here's a quick example that highlights the visual difference between .container and .container-fluid:</p>
+    </div>
+    <div class="container">
+      <h2>1- Container</h2>
+      <div class="container alert alert-secondary">
+        <h2>Here is some content inside of a container!</h2>
+        <p>Any layout that you build with Bootstrap should begin with a container. According to the docs, "Containers are the most basic layout element in Bootstrap and are required when using our default grid system" (emphasis original). We'll get to the grid system momentarily, but for now let's talk about containers.</p>
+      </div>
+    </div>
+    <!-- || -->
+    <hr>
+    <div class="container">
+        <h2>2- Grid System Example</h2>
+        <p>A quick summary of the sizes and associated classes.</p>
+        <table class="table table-striped table-dark">
+         <thead>
+            <tr>
+              <th scope="col">Size</th>
+              <th scope="col">Extra Small</th>
+              <th scope="col">Small</th>
+              <th scope="col">Medium</th>
+              <th scope="col">Large</th>
+              <th scope="col">Extra large</th>
+            </tr>
+         </thead>
+          <tr>
+            <th scope="row">Brek Point</th>
+            <td>N/A</td>
+            <td>576px</td>
+            <td>768px</td>
+            <td>992px</td>
+            <td>1200</td>
+          </tr>
+          <tr>
+            <th scope="row">Class Prefix</th>
+            <td><code>col-</code></td>
+            <td><code>col-sm-</code></td>
+            <td><code>col-md</code></td>
+            <td><code>col-lg</code></td>
+            <td><code>col-xl</code></td>
+          </tr>
+        </table>
+      </div>
+
+      <div class="container">
+        
+        <div class="row">
+          <div class="col-12 col-md-8 alert alert-success">I take up the whole row on extra small screens, 2/3rds on medium (or larger) screens.</div>
+          <div class="col-6 col-md-4 alert alert-danger">I take up half a row on extra small screens, 1/3rd on medium (or larger) screens.</div>
+        </div>
+
+        <div class="row">
+          <div class="col-sm-6 col-md-4 alert alert-warning">I take up a row on extra small screens, half a row on small screens, and 1/3rd on medium (or larger) screens.</div>
+          <div class="col-sm-6 col-md-4 alert alert-info">I take up a row on extra small screens, half a row on small screens, and 1/3rd on medium (or larger) screens.</div>
+          <div class="col-6 col-md-4 col-lg-12 alert alert-dark">I take up half a row on extra small screens, 1/3rd on medium (or larger) screens, and a full row on large screens.</div>
+        </div>
+        
+      </div>
+      <!-- || -->
+      <div class="container">
+        <div class="row">
+          <div class="col-6 alert alert-primary">I always take up half a row.</div>
+          <div class="col-6 alert alert-secondary">I always take up half a row.</div>
+        </div>
+
+        <div class="row">
+          <div class="col alert alert-secondary">I'm one of three columns!</div>
+          <div class="col alert alert-primary">I'm one of three columns!</div>
+          <div class="col alert alert-secondary">I'm one of three columns!</div>
+        </div>
+
+        <div class="row">
+          <div class="col alert alert-warning">I'm one of four columns!</div>
+          <div class="col alert alert-success">I'm one of four columns!</div>
+          <div class="col alert alert-danger">I'm one of four columns!</div>
+          <div class="col alert alert-info">I'm one of four columns!</div>
+        </div>
+
+        <div class="row">
+          <div class="col-7 alert alert-light">I take up 7/12 columns!</div>
+          <div class="col alert alert-dark">I take up half the remainder!</div>
+          <div class="col alert alert-dark">I also take up half the remainder!</div>
+        </div>
+      </div>
+      <!-- || -->
+      <hr>
+      <div class="container">
+        <h2>3- Justify-contnet</h2>
+        <p>You can also offset columns if you want to add some space between them or around them. Under the hood, the grid system in version 4 of Bootstrap uses flexbox, which means there are several ways you can offset columns. One approach is to set the <code>justify-content</code> property on the row. Bootstrap provides you with classes to modify this property on the rows.</p>
+        <div class="row justify-content-center">
+          <div class="col-6 alert alert-primary">I'm in the middle using justify-content!</div>
+        </div>
+        <div class="row justify-content-between">
+          <div class="col-4 alert alert-success">I'm on the left using justify-content.</div>
+          <div class="col-4 alert alert-warning">I'm on the right using justify-content.</div>
+        </div>
+
+        <div class="row">
+          <div class="col-6 ml-auto mr-auto alert alert-primary">I'm in the middle using margin!</div>
+        </div>
+
+        <div class="row">
+          <div class="col-4 mr-auto alert alert-success">I'm on the left using margin.</div>
+          <div class="col-4 alert alert-warning">I'm on the right using margin.</div>
+        </div>
+      </div>
+      <!-- || -->
+      <div class="container">
+        <h2>4- Using margin</h2>
+        <p>Another approach is to modify the margins. Bootstrap gives you two classes which can be helpful for offsetting columns using margin: <code>ml-auto</code>, which sets the margin-left to auto, and <code>mr-auto</code>, which sets the margin-right to auto. Here's an example of the two approaches:</p>
+        <div class="row">
+          <div class="col-6 ml-auto mr-auto alert alert-primary">I'm in the middle!</div>
+        </div>
+        <div class="row">
+          <div class="col-4 mr-auto alert alert-success">I'm on the left.</div>
+          <div class="col-4 alert alert-warning">I'm on the right.</div>
+        </div>
+      </div>
+      <!-- || -->
+      <hr>
+      <div class="container">
+        <h2>5- Spacing classes in Bootstrap</h2>
+        <p>In the previous example, we saw how Bootstrap classes like <code>mr-auto</code> and <code>ml-auto</code> could be used to add margin to elements on the page.</p>
+        <p>Bootstrap comes with a number of classes to help add space between elements on the page. These elements all come in the form <code> {property}{sides}-{size}</code> or <code>{property}{sides}-{breakpoint}-{size}</code>, where <code>property</code>, <code>sides</code>, <code>breakpoint</code>, and <code>size</code> are one of the following:</p>
+
+        <ul>
+          <li><code>property</code>: <code>m</code> (margin) or <code>p</code> (padding)</li>
+          <li><code>sides</code>: <code>t</code> (top), <code>b </code>(bottom), <code>l</code> (left), <code>r </code>(right), <code>x </code>(left and right), or <code>y</code> (top and bottom). You can also leave this value blank to target all directions.</li>
+          <li><code>breakpoint</code>: <code>sm</code>, <code>md</code>, <code>lg</code>, or <code>xl</code>. You can also leave this value blank to target <code>xs</code>.</li>
+          <li><code>size</code>: a number from 0 to 5. Larger numbers indicate more space.</li>
+          <li></li>
+        </ul>
+
+        <div class="alert alert-primary px-5 py-md-3">I have lots of padding (but slightly less on medium screens)!</div>
+        <div class="alert alert-primary px-0 py-0 m-5">I have lots of margin, but no padding!</div>
+        <div class="alert alert-danger p-0 m-0">I have neither margin nor padding :</div>
+        <div class="alert alert-success pt-5 pb-0 pl-2 pr-4 mt-0 ml-5 mr-1 mb-5">My spacing is all over the place!</div>
+      </div>
+      <!-- || -->
+      <div class="container">
+        <h2>6- Typography</h2>
+      </div>
+
+      <!-- || -->
+      <div class="container">
+        <h2>7- Spacing</h2>
+        <p>Bootstrap 4 has a wide range of responsive margin and padding utility classes. They work for all breakpoints: <code>xs</code> (<=576px), (>=576px), <code>md</code> (>=768px), <code>lg</code> (>=992px) or <code>xl</code> (>=1200px)):</p>
+        <p>The classes are used in the format: <code>{property}{sides}-{size}</code> for <code>xs</code> and <code>{property}{sides}-{breakpoint}-{size}</code> for <code>sm</code>, <code>md</code>, <code>lg</code>, and <code>xl</code>.</p>
+        <ul>
+          <p>Where <em>property</em> is one of:</p>
+          <li><code>m</code> - sets <code>margin</code></li>
+          <li><code>p</code> - sets <code>padding</code></li>
+        </ul>
+      </div>
+     
+</body>
+</html>

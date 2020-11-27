@@ -22,7 +22,7 @@
         6- CONDITIONS
         7- BOUCLES
         8- FONCTION
-        9-
+        9- SUPPLEMENT
         10-
         */
 
@@ -510,7 +510,27 @@
         }
         quelleEcole(sonAge);
 
+        //9- SUPPLEMENT
+        document.write('<h2 style="background: orange; width: 50%; color: #fff; ">9-Suppléments </h2>')
 
+        //parseInt
+        //parseInt permet de transformer un string en number, changer le type de la variable
+
+        let chiffreNew = '100'; // une string
+        console.log(typeof(chiffreNew), chiffreNew);// confirmationque nous avons une string
+        let parse = parseInt(chiffreNew);//pour changer le type de la variable chiffreNew on le passe dans une nouvelle variable
+
+        console.log(typeof parse, chiffreNew);//cette nouvelle variable est de type number
+
+        let chiffreNew2 = 50;
+        console.log(parse + chiffreNew2);// ici on additiionne
+
+        let chiffreNew3 = 182.2635;
+        console.log(parseInt(chiffreNew3));
+
+        //parseFloat transforme une string en number avec la virgule
+        let chiffreNew4 = '10.23689';
+        console.log(parseFloat(chiffreNew4));
     
    </script>
    <p id="w1"></p>

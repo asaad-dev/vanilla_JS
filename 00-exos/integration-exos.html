@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>        <meta charset="UTF-8">
+        <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+        <!-- la ligne suivante vient de getbootstrap et comporte une valeur supplémentaire "shrink-to-fit=no" cela concerne les mobiles -->
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <title>Integration Exos</title>
+        <link rel="icon" href="../img/variable.png">
+        <!-- CSS de Bootstrap -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">        <!-- <link rel="stylesheet" href="../css/style.css"> -->
+        <script src="introduction.js" async></script>
+
+
+         <!-- style -->
+         <style>
+            /* Sticky footer styles
+            -------------------------------------------------- */    
+             /* image-brand */
+            .navbar img {
+                width: 50px;
+                height: 50px;
+                border-radius: 50px;
+            }
+
+            .navbar-brand {
+                font-size: 2rem;
+                font-weight: bold;
+            }
+
+
+            .menu-bar {
+                background: linear-gradient(to left, #f068b7, #097cf0);
+            }
+
+            .nav-link {
+                font-size: 16px;
+                margin: 3px;
+                color: #fff !important;
+                font-weight: 500;
+            }
+
+            .nav-bar {
+                text-align: right;
+                margin-right: 20px;
+            }
+
+            .menu-bar .navbar-toggle {
+                padding-right: 20px;
+                outline: none !important;
+                border: none !important;
+            }
+
+            .nav-link:hover {
+                font-weight: bold;
+                border-bottom: 1px solid #000;
+            }
+            /* Media query -> Navbar toggle */
+            @media only screen and (max-width: 1000px) {
+                .nav-link:hover {
+                    border-bottom: none !important;
+                    color: #000;
+                }
+            
+            }
+           /* footer */
+           #footer {
+               background: linear-gradient(to left, #097cf0, #f068b7);
+           }
+           #footer h3 {
+               color: #fff;
+               font-family: monospace;
+           }
+           #footer p, a {
+               color: #000;
+               font-size: 15px;
+               
+           }
+           #footer a:hover {
+               text-decoration: none;
+               border-bottom: 1px solid #fff;
+               font-size: 16px;
+               color: #000;
+           }
+           #footer small {
+               font-size: 16px;
+           }
+
+            /* Custom page CSS
+            -------------------------------------------------- */
+            /* Not required for template or sticky footer method. */            
+            /* .container {
+            width: auto;
+            max-width: 1200px;
+            padding: 0 15px;
+            } */
+        </style>
+
+</head>
+<body>    
+    <div class="header">
+        <div class="menu-bar">
+            <nav class="navbar navbar-expand-lg navbar-light">
+                <img src="../img/variable.png" alt="Exos Logo">
+                <a class="navbar-brand pl-2" href="#">Exos</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarNav">
+                  <ul class="navbar-nav ml-auto">
+                    <li class="nav-item"><a class="nav-link" href="01-bonjour.html" target="_blank">Bonjour</a></li>
+                    <li class="nav-item"><a class="nav-link" href="02-valeurs.html" target="_blank">Valeurs</a></li>
+                    <li class="nav-item"><a class="nav-link" href="03-tva.html" target="_blank">TVA</a></li>
+                    <li class="nav-item"><a class="nav-link" href="05-permutation.html" target="_blank">Permutation</a></li>
+                    <li class="nav-item"><a class="nav-link" href="06-joursuivant.html" target="_blank">Jour suivant</a></li>
+                    <li class="nav-item"><a class="nav-link" href="07-comparaison.html" target="_blank">Comparaison</a></li>
+                    <li class="nav-item"><a class="nav-link" href="08-baccalaureat.html" target="_blank">Baccalauréat</a></li>
+                  </ul>
+                </div>
+              </nav>
+        </div>
+    </div>
+    <!-- fin header -->         
+    <div class="container-fluid">
+        <div class="row m-3">
+            <div class="col-sm-12 col-md-6 col-lg-6 colx-6">
+                <h3>Qu'est-ce qu'une fonction</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia et mollitia quod quo, qui nobis vitae, corrupti similique eius itaque dolorem? Quia odit iure qui facilis soluta aliquam facere ullam?</p>
+                <h5>Resources</h5>
+                <ul>
+                    <code>
+                        <li><a href="https://developer.mozilla.org/fr/docs/Apprendre/JavaScript" target="_blank">MDN</a></li>
+                        <li><a href="https://maurice-chavelli.developpez.com/tutoriels/nouveautes-es6/variables-et-fonctions/" target="_blank">Developpez.com</a></li>
+                        <li><a href="https://www.pierre-giraud.com/javascript-apprendre-coder-cours/" target="_blank">Pierre Giraud</a></li>
+                        <li><a href="https://www.youtube.com/watch?v=lDO14MA0C_o&list=PLwLsbqvBlImFB8AuT6ENIg-s87ys4yGWI&index=2" target="_blank">Pierre Giraud Youtube</a></li>
+                        <li><a href="https://openclassrooms.com/fr/courses/6175841-apprenez-a-programmer-avec-javascript/6278392-declarez-des-variables-et-modifiez-leurs-valeurs" target="_blank">Open Classrooms</a></li>
+                    </code>
+                </ul>
+            </div>
+
+
+            <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6">
+                <h3>Storing the information you need - Variables<h2>
+                <h5>Learning Outcomes</h5>
+                <ul>
+                    <li>How do you declare a variable?</li>
+                    <li>What are three different ways to declare a variable?</li>
+                    <li>Which one should you use and when?</li>
+                    <li>What are the rules for naming variables?</li>
+                </ul>
+                <h4>What is a variable?</h4>
+                <p>A variable is a container for a value, like a number we might use in a sum, or a string that we might use as part of a sentence. But one special thing about variables is that their contained values can change.</p>
+                <h4>Primitive Data Types in JavaScript</h4>
+                <p>So far, we've only used variables to store strings. But JavaScript can work with other types of data as well. Let's take a look at the primitive data types ... <code>Resource</code> <a href="https://www.rithmschool.com/courses/javascript/introduction-to-javascript-variables-and-primitives">Rithm School</a></p>
+            </div>
+        </div>
+
+    </div>
+           
+    
+    <!-- || footer -->
+     <!-- ce code vient d'un modèle getboostrap pour un footer en bas de page -->
+    <footer id="footer">
+        <div class="container">
+
+            <div class="row">
+                <div class="col-md-4">
+                    <h3 class="pt-4">Fonction</h3>
+                    <br>
+                    <p><a class="" href="01-bonjour.html" target="_blank">Bonjour</a></p>
+                    <p><a class="" href="02-valeurs.html" target="_blank">Valeurs</a></p>
+                    <p><a class="" href="03-tva.html" target="_blank">TVA</a></p>
+                    <p><a class="" href="05-permutation.html" target="_blank">Permutation</a></p>
+                    <p><a class="" href="06-joursuivant.html" target="_blank">Jour Suivant</a></p>
+                    <p><a class="" href="07-comparaison.html" target="_blank">Comparaison</a></p>
+                    <p><a class="" href="08-baccalaureat.html" target="_blank">Baccalauréat</a></p>
+                </div>
+                <!-- first row -->
+                <div class="col-md-4">
+                    <h3 class="pt-4">Resources</h3>
+                    <br>
+                    <p><a href="https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Building_blocks" target="_blank" class="">MDN</a></p>
+                    <p><a href="https://www.w3schools.com/js/js_variables.asp" target="_blank" class="">W3 Schoole</a></p>
+                    <p><a href="https://www.theodinproject.com/courses/foundations/lessons/fundamentals-part-1" target="_blank" class="">The Odin Project</a></p>
+                    <p><a href="https://open.appacademy.io/learn/full-stack-online/javascript/variables" target="_blank" class="">Open app academy</a></p>
+                    <p><a href="http://speakingjs.com/es5/" target="_blank" class="">Speaking JS</a></p>
+                    <p><a href="https://eloquentjavascript.net/" target="_blank" class="">Eloquent JS</a></p>
+                </div>
+                <!-- second row -->
+                <div class="col-md-4">
+                    <h3 class="pt-4">Exos</h3>
+                    <br>
+                    <p><a href="https://www.codingame.com/playgrounds/3777/exercices-de-javascript-pour-debutants-en-informatique/introduction" target="_blank" class="">Exercises</a></p>
+                    <p><a href="#"target_blank class="">Exo 1</a></p>
+                    <p><a href="#"target_blank class="">Exo 1</a></p>
+                    <p><a href="#"target_blank class="">Exo 1</a></p>
+                </div>
+                <!-- third row -->
+            </div>
+        </div>
+        <!-- || -->
+        <hr>
+        <div class="footer-copy text-center py-3 bg-primary">
+            <small>&copy; Exos</small>
+            <br>
+            <small>JS</small>
+        </div>
+    </footer>
+    
+    <!-- En 1er JQuery, puis Popper.js et le JS de Bootstrap -->    
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js" integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s" crossorigin="anonymous"></script>
+</body>
+</html>

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Exo - 02 Valeurs</title>
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <!-- style css -->
+    <style>
+        /*-- Body background color
+    -------------------------------*/
+    body {
+       background: #6C757D; 
+    }
+   
+    </style>
+</head>
+<body >
+    <div class="container bg-light rounded-sm p-2">
+        <h1 class="bg-info text-center font-weight-bold rounded-lg pb-2 mb-5 border border-secondary">Valeurs !</h1>
+        <p>Observez le code ci-dessous et tentez de prévoir les valeurs finales de chaque variable à la fin de chaque ligne (par exemple aprés la ligne <code>var a = 2;</code>) si je faisais un console.log de a j'aurai 2 comme résultat. cf. <a href="img/02-valeurs.png">capture d'écran</a></p>
+        <hr>
+        <p>L'idée est de faire les calculs vous-même, sur une feuille par exemple AVANT de regarder dans la console !</p>
+
+        <div class="container">
+            <table class="table table-bordered table-dark">
+                <thead>
+                    <th col="">Opération</th>
+                    <th col="">Explication</th>
+                </thead>
+                <tr>
+                    <td>var a = 2;</td>
+                    <td><em>Explication</em> : (a = 2)</td>
+                </tr>
+                <tr>
+                    <td>a = a - 1;</td>
+                    <td><em>Explication</em> : (2-1 = 1)</td>
+                </tr>
+                <tr>
+                    <td>a++;</td>
+                    <td><em>Explication</em> : (1+1 = 2)</td>
+                </tr>
+                <tr>
+                    <td>var b = 8</td>
+                    <td><em>Explication</em> : (b = 8)</td>
+                </tr>
+                <tr>
+                    <td>b += 2</td>
+                    <td><em>Explication</em> : (8+=2) = 10</td>
+                </tr>
+                <tr>
+                    <td>var c = a + b * b;</td>
+                    <td><em>Explication</em> : (10x10 = 100) +2 = 102</td>
+                </tr>
+                <tr>
+                    <td>var d = a * b + b;</td>
+                    <td><em>Explication</em> : (2x10)= 20+10 = 30</td>
+                </tr>
+                <tr>
+                    <td>var e = a *(b + b);</td>
+                    <td><em>Explication</em> : (10+10) = 20x2 = 40</td>
+                </tr>
+                <tr>
+                    <td>var f = a * b / a</td>
+                    <td><em>Explication</em> : (2x10) 20 / 2</td>
+                </tr>
+                <tr>
+                    <td>var g = b / a * a;</td>
+                    <td><em>Explication</em> : (10/2 = 5) *2 = 10</td>
+                </tr>
+            </table>
+            <p class="alert alert-warning">Verifiez vous prévisions en créant ce programme puis en le déboguant pour observer les valeurs des variables</p>
+        </div>
+    </div>
+
+
+    <!-- En 1er JQuery, puis Popper.js et le JS de Bootstrap -->    
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js" integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s" crossorigin="anonymous"></script>
+    <!-- Script perso -->
+    <script src="js/02-valeurs.js"></script>
+</body>
+</html>
