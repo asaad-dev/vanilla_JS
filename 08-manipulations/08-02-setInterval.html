@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+        <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+        <!-- la ligne suivante vient de getbootstrap et comporte une valeur supplémentaire "shrink-to-fit=no" cela concerne les mobiles -->
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <title>JS - VIII 02 diaporama avec setInterval()</title>
+        <link rel="icon" href="../img/js.png">
+
+        <!-- CSS de Bootstrap -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">        
+        <!-- <link rel="stylesheet" href="../css/style.css"> -->
+        <script src="js/setInterval.js" async></script>
+         <!-- style -->
+         <link rel="stylesheet" href="../css/navbar.css">
+         <style>
+            button {
+                position: relative;
+                bottom: 250px;
+            }
+        </style>
+         
+
+</head>
+<body>
+    <nav class="navbar navbar-expand-md navbar-dark bg-success">
+        <a class="navbar-brand" href="#">Cours JS</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample04" aria-controls="navbarsExample04" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse" id="navbarsExample04">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+                <a class="nav-link" href="../06-selecteurs/06-01-selecteurs.html">06 Sélecteurs</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="../07-evenements/07-01-evenements.html">07 Evènements</a>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link" href="08-02-setInterval.html">08 SetInterval</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="../09-dom/09-01-dom.html">09 Le DOM</a>
+            </li>
+            
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="dropdown04" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">08 Manipulation</a>
+              <div class="dropdown-menu" aria-labelledby="dropdown04">
+                <a class="dropdown-item" href="08-01-diaporama.html">Diaporama</a>
+                <a class="dropdown-item" href="08-02-setInterval.html">SetInterval</a>
+                <a class="dropdown-item" href="08-03-keydwon.html">Keydown</a>
+                <a class="dropdown-item" href="08-04-formulaire.html">Formulaire</a>
+                <a class="dropdown-item" href="08-05-toggle.html">Toggle</a>
+
+              </div>
+            </li>
+          </ul>
+          <form class="form-inline my-2 my-md-0">
+            <input class="form-control" type="text" placeholder="Search">
+          </form>
+        </div>
+      </nav>
+      <!-- fin navbar -->
+    <div class="jumbotron">
+        <h1 id="titreNiveau1" class="display-4">JS - VIII 02 Diaporama avec setInterval()</h1>
+        <p class="lead">setInterval()</p>
+    </div>
+    <!-- fin jumbotron -->
+    <div class="container border border-primary p-4">
+
+        <div class="row border border-danger m-2 p-2">
+            <div class="col-6">
+                <h1>1-setInterval()</h1>
+            </div><!-- fin col -->
+
+            <div class="col-6">
+                <div id="diaporama1" class="border border-danger">
+                    <img src="img/2.jpg" alt="Vive l'herbe" id="imgDiapo"  ">
+                </div>
+            </div><!-- fin col -->
+        </div><!-- fin row -->
+        <!-- fin diaporama1 -->
+        <!-- -->
+        
+        
+        
+        
+    </div><!-- fin container -->
+
+
+    <!-- En 1er JQuery, puis Popper.js et le JS de Bootstrap -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js" integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s" crossorigin="anonymous"></script>
+
+    <!-- Mes scripts -->
+    <script>
+        // diaporama avec setInterval()
+
+        let varImg = 0; //  initialisation à 0 de la variable pour l'image à
+        console.log(typeof varImg, varImg);
+
+        // let test = imgDiapo.getAttribute('src');
+        // console.log(test);
+
+        let timer = window.setInterval('monDiaporama()', 3000);//   initialisation de timer acec setInterval ('nom de la fonction', temps e, milli seconde)
+
+
+        function monDiaporama() {
+            varImg +=1; //  on affecte 1 et on incrémente
+            imgDiapo.setAttribute('src', 'img/' + varImg + '.jpg');//   je confére, je définis, je mets en place et j'appele les images par leur nom, automatiquement
+            console.log('la varImg' + varImg);//  pour voir le contenu de la vaiable
+            if(varImg == 5) {
+                clearInterval(timer);// clearInterval permet de stoper dés que la variable est égale à 5 (le nombre d'images dans le diaporama)
+            }
+        }
+
+        /*  */
+               
+        //DIAPO 2         
+        document.getElementById('btnAvant').addEventListener('click', diapoAvant);         
+        function diapoAvant() { 
+            var getImage = document.getElementById('imgDiapo2').getAttribute('src')            switch(getImage){
+                case 'img/2.jpg' : 
+                    document.getElementById('imgDiapo2').src = 'img/3.jpg'
+                    break;
+            }
+            switch(getImage){
+                case 'img/2.jpg' : 
+                    document.getElementById('imgDiapo2').src = 'img/4.jpg'
+                    break;
+            }
+            switch(getImage){
+                case 'img/4.jpg' : 
+                    document.getElementById('imgDiapo2').src = 'img/1.jpg'
+                    break;
+            }
+            switch(getImage){
+                case 'img/3.jpg' : 
+                    document.getElementById('imgDiapo2').src = 'img/2.jpg'
+                    break;
+            }
+            switch(getImage){
+                case 'img/5.jpg' : 
+                    document.getElementById('imgDiapo2').src = 'img/2.jpg'
+                    break;
+            }
+            switch(getImage){
+                case 'img/4.jpg' : 
+                    document.getElementById('imgDiapo2').src = 'img/3.jpg'
+                    break;
+            }
+            switch(getImage){
+                case 'img/3.jpg' : 
+                    document.getElementById('imgDiapo2').src = 'img/2.jpg'
+                    break;
+            }
+        }        document.getElementById('btnApres').addEventListener('click', diapoApres);         function diapoApres(){
+            var getImage = document.getElementById('imgDiapo2').getAttribute('src')            switch(getImage){
+                case 'img/2.jpg' : 
+                    document.getElementById('imgDiapo2').src = 'img/3.jpg'
+                    break;
+            }
+            switch(getImage){
+                case 'img/3.jpg' : 
+                    document.getElementById('imgDiapo2').src = 'img/4.jpg'
+                    break;
+            }
+            switch(getImage){
+                case 'img/4.jpg' : 
+                    document.getElementById('imgDiapo2').src = 'img/5.jpg'
+                    break;
+            }
+            switch(getImage){
+                case 'img/5.jpg' : 
+                    document.getElementById('imgDiapo2').src = 'img/6.jpg'
+                    break;
+            }
+            switch(getImage){
+                case 'img/6.jpg' : 
+                    document.getElementById('imgDiapo2').src = 'img/7.jpg'
+                    break;
+            }
+            switch(getImage){
+                case 'img/7.jpg' : 
+                    document.getElementById('imgDiapo2').src = 'img/8.jpg'
+                    break;
+            }
+            switch(getImage){
+                case 'img/8.jpg' : 
+                    document.getElementById('imgDiapo2').src = 'img/2.jpg'
+                    break;
+            }
+        }
+    </script>
+    
+</body>
+</html>
