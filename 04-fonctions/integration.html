@@ -11,7 +11,7 @@
         <script src="introduction.js" async></script>
 
 
-         <!-- style -->
+         <!-- mes style -->
          <style>
             /* Sticky footer styles
             -------------------------------------------------- */    
@@ -79,16 +79,6 @@
            #footer small {
                font-size: 16px;
            }
-
-
-            /* Custom page CSS
-            -------------------------------------------------- */
-            /* Not required for template or sticky footer method. */            
-            /* .container {
-            width: auto;
-            max-width: 1200px;
-            padding: 0 15px;
-            } */
         </style>
 
 </head>
@@ -166,64 +156,133 @@
             </nav>
         </div>
     </div>
-    <!-- fin header -->         
+    <!-- fin header -->    
+    <div class="col-12 p-3 text-center bg-light">
+        <h3><code>1-</code> Variable</h3>
+    </div>     
     <div class="container-fluid">
-        <div class="row m-3">
+        <div class="row p-2">
             <div class="col-sm-12 col-md-6 col-lg-6 colx-6">
                 <h3>Qu'est-ce qu'une fonction</h3>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia et mollitia quod quo, qui nobis vitae, corrupti similique eius itaque dolorem? Quia odit iure qui facilis soluta aliquam facere ullam?</p>
-                <h5>Resources</h5>
-                <ul>
-                    <code>
-                        <li><a href="https://developer.mozilla.org/fr/docs/Apprendre/JavaScript/Building_blocks" target="_blank">MDN</a></li>
-                        <li><a href="https://javascript.developpez.com/tutoriels/livre-complet/eloquent-javascript/?page=les-fonctions#LIV" target="_blank">Developpez.com</a></li>
-                        <li><a href="https://www.pierre-giraud.com/javascript-apprendre-coder-cours/" target="_blank">Pierre Giraud</a></li>
-                        <li><a href="https://www.youtube.com/watch?v=lDO14MA0C_o&list=PLwLsbqvBlImFB8AuT6ENIg-s87ys4yGWI&index=2" target="_blank">Pierre Giraud Youtube</a></li>
-                        <li><a href="https://maurice-chavelli.developpez.com/tutoriels/nouveautes-es6/variables-et-fonctions/" target="_blank">Developpez.com</a></li>
-                        <li><a href="https://openclassrooms.com/fr/courses/6175841-apprenez-a-programmer-avec-javascript/6278392-declarez-des-variables-et-modifiez-leurs-valeurs" target="_blank">Open Classrooms</a></li>
-                    </code>
-                </ul>
             </div>
-
-
+            <!-- fin col - fr -->
             <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6">
-                <h3>Storing the information you need - Variables<h2>
-                <h5>Learning Outcomes</h5>
+                <h5>Storing the information you need</h5>
+                <p>Most of the time, a JavaScript application needs to work with information. Here are two examples:</p>
                 <ul>
-                    <li>How do you declare a variable?</li>
-                    <li>What are three different ways to declare a variable?</li>
-                    <li>Which one should you use and when?</li>
-                    <li>What are the rules for naming variables?</li>
+                    <li>An online shop - the information might include goods being sold and shopping cart.</li>
+                    <li>A chat application - the information might include users, messages, and much more.</li>
                 </ul>
-                <h4>What is a variable?</h4>
+                <p>Variables are used to store this information.</p>
+                <h5>What is a variable?</h5>
                 <p>A variable is a container for a value, like a number we might use in a sum, or a string that we might use as part of a sentence. But one special thing about variables is that their contained values can change.</p>
-                <h4>Primitive Data Types in JavaScript</h4>
-                <p>So far, we've only used variables to store strings. But JavaScript can work with other types of data as well. Let's take a look at the primitive data types ... <code>Resource</code> <a href="https://www.rithmschool.com/courses/javascript/introduction-to-javascript-variables-and-primitives">Rithm School</a></p>
+                <p>We can declare variables to store data by using the <code>var</code>, <code>let</code>, or <code>const</code> keywords</p>
+                <p><code>const</code> - is like <code>let</code>, but the cvalue of the variable can't be changed.</p>
+                <h5>Name things right</h5>
+                <p>Talking about variables, there's one more extremely important thing.</p>
+                <p>A variable naming is one of the most important and complex skills in programming. A quick glance at variable names can reveal which code was written by a beginner versus an experienced developer.</p>
+                <h5>Primitive Data Types in JavaScript</h5>
+                <p>So far, we've only used variables to store strings. But JavaScript can work with other types of data as well. Let's take a look at the primitive data types <code>=></code> <a href="https://www.rithmschool.com/courses/javascript/introduction-to-javascript-variables-and-primitives"><code>Rithm School</code></a></p>
             </div>
         </div>
-
     </div>
-           
-    
-    <!-- || footer -->
-     <!-- ce code vient d'un modèle getboostrap pour un footer en bas de page -->
+    <!-- fin container - variable -->
+
+    <div class="col-12 p-3 text-center bg-light">
+        <h3><code>2-</code> Control flow</h3>
+    </div>
+    <div class="container-fluid">
+        <div class="row p-2">
+            <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6">
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vitae officiis provident repellendus hic quae sequi? Sequi ad, deserunt voluptates eos maiores, facere, laboriosam cupiditate nemo autem repudiandae ipsa qui dolorum!</p>
+        
+            </div>
+            <!-- fin col - fr -->
+            <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6">
+                <h5>Ternary operator</h5>
+                <p>When you want to execute a block of code if a particular test evaluates to <code>true</code>, you often use the <code>if-else</code> statement <br>Example, if <code>age</code> is greater than <code>16</code>, then allow the person to drive can be coded as follws:</p>
+                <pre><code>
+            var age = 19;
+            var canDrive;
+            if (age > 16) {
+                canDrive = 'yes';
+            } else {
+                canDrive = 'no';
+            }
+                </code></pre>
+                <p>In this example you can use ternary opertor as shortcut for the <code>if-else</code> statement as follws:</p>
+                <p><pre><code>
+            var age = 19;
+            var canDrive = age > 16 ? 'yes' : 'no';
+                </code></pre></p>
+                <p>The code looks much cleaner <br>In general, the syntax of the ternary operators is as follws:</p>
+                <p><code>condition ? expression_1 : expression_2</code></p>
+                <p>It's very hard to write any kind of interesting software without making use of conditionals and boolean logic.</p>
+                <p>Ternary operators can help you write less code, but be careful using them, as they also tend to make your code more difficult to read.</p>
+        
+            </div>
+            <!-- fin col - en -->
+        </div>
+        <!-- fin row - control structure-->
+    </div>
+    <!-- fin container control structure -->
+
+    <div class="col-12 p-3 text-center bg-light">
+        <h3><code>3-</code> Function</h3>
+    </div>
+    <div class="container-fluid">
+        <div class="row p-2">
+            <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6">
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vitae officiis provident repellendus hic quae sequi? Sequi ad, deserunt voluptates eos maiores, facere, laboriosam cupiditate nemo autem repudiandae ipsa qui dolorum!</p>
+        
+            </div>
+            <!-- fin col - fr -->
+            <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6">
+                <h5>Declaring functions</h5>
+                <p>there are multiple ways to declare a function and assign it to a variable in javaScript</p>
+                <p><pre><code>
+            Function-style:
+            function functionName(arg1, arg2, arg3) {
+                //code block...
+            }
+
+            Expression-style:
+            const functionName = function(arg1, arg2, arg3) {
+                //code block...
+            }
+
+            Fat Arrow-styleb(ES6+):
+            const functionName = (arg1, arg2, arg3, argN) => {
+                //code block...
+            }
+                </code></pre></p>
+        
+            </div>
+            <!-- fin col - en -->
+        </div>
+        <!-- fin row - control structure-->
+    </div>
+    <!-- fin container control structure -->
+      
+    <!-- ce code vient d'un modèle getboostrap pour un footer en bas de page -->
     <footer id="footer">
         <div class="container">
 
             <div class="row">
-                <div class="col-4">
-                    <h3 class="pt-4">Fonction</h3>
+                <div class="col-lg-4 col-md-4 col-sm-12">
+                    <h3 class="pt-4">Resources fr</h3>
                     <br>
-                    <p><a class="" href="04-01-introduction.html" target="_blank">Introduction</a></p>
-                    <p><a class="" href="04-02- portee.html" target="_blank">Portée</a></p>
-                    <p><a class="" href="04-03- var-let.html" target="_blank">Var let</a></p>
-                    <p><a class="" href="04-04-retour.html" target="_blank">Retour</a></p>
-                    <p><a class="" href="04-05-conclusion.html" target="_blank">Conclusion</a></p>
-                    <p><a class="" href="sum-04.html" target="_blank">Summary</a></p>
+                    <p><a href="https://developer.mozilla.org/fr/docs/Apprendre/JavaScript/Building_blocks" target="_blank">MDN</a></p>
+                    <p><a href="https://javascript.developpez.com/tutoriels/livre-complet/eloquent-javascript/?page=les-fonctions#LIV" target="_blank">Developpez.com</a></p>
+                    <p><a href="https://www.pierre-giraud.com/javascript-apprendre-coder-cours/" target="_blank">Pierre Giraud</a></p>
+                    <p><a href="https://www.youtube.com/watch?v=lDO14MA0C_o&list=PLwLsbqvBlImFB8AuT6ENIg-s87ys4yGWI&index=2" target="_blank">Pierre Giraud Youtube</a></p>
+                    <p><a href="https://maurice-chavelli.developpez.com/tutoriels/nouveautes-es6/variables-et-fonctions/" target="_blank">Developpez.com</a></p>
+                    <p><a href="https://openclassrooms.com/fr/courses/6175841-apprenez-a-programmer-avec-javascript/6278392-declarez-des-variables-et-modifiez-leurs-valeurs" target="_blank">Open Classrooms</a></p>
                 </div>
                 <!-- first row -->
-                <div class="col-4">
-                    <h3 class="pt-4">Resources</h3>
+                <div class="col-4 col-md-4 col-sm-12">
+                    <h3 class="pt-4">Resources en</h3>
                     <br>
                     <p><a href="https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Building_blocks" target="_blank" class="">MDN</a></p>
                     <p><a href="https://www.w3schools.com/js/js_variables.asp" target="_blank" class="">W3 Schoole</a></p>
@@ -233,7 +292,7 @@
                     <p><a href="https://eloquentjavascript.net/" target="_blank" class="">Eloquent JS</a></p>
                 </div>
                 <!-- second row -->
-                <div class="col-4">
+                <div class="col-4 col-md-4 col-sm-12">
                     <h3 class="pt-4">Exos</h3>
                     <br>
                     <p><a href="https://www.codingame.com/playgrounds/3777/exercices-de-javascript-pour-debutants-en-informatique/introduction" target="_blank" class="">Exercises</a></p>
@@ -247,9 +306,9 @@
         <!-- || -->
         <hr>
         <div class="footer-copy text-center py-3 bg-primary">
-            <small>&copy; Fonction</small>
+            <small>&copy; JS Foundation</small>
             <br>
-            <small>JS</small>
+            <small>2021</small>
         </div>
     </footer>
     
