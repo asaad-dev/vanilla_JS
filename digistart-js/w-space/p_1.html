@@ -4,11 +4,67 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+
+    <style>
+        body {
+            background: #2E2D2E;
+            font: Biryani;
+        }
+       
+        h1 {
+            color: #F0C300;
+        }
+        h4 {
+            color: #fd5050;
+        }
+        p {
+            color: #fff;
+        }
+        label {
+            color: #fff;
+        }
+        input {
+            margin: 10px 0 10px;
+        }
+        
+        button {
+            color: #fff;
+            background: #048b9a;
+            border: none;
+            padding: 7px;
+            text-align: center;
+            border-radius: 5px;
+            margin-left: 55px;
+
+        }
+    </style>
 </head>
 <body>
-    <h1>Mastering JS</h1>
-    <p id="demo"></p>
-    
+    <div class="container">
+        <h1>HTML Form Events</h1>
+        <h4>Input - Submit</h4>
+        <p>Change - Focus - Blur</p>
+        <p>Click - MouseDown - MouseUp</p>
+        <p>KeyDown - KeyUp - KeyPress</p>
+        <form action="">
+            <div>
+                <label for="name">Username</label>
+                <br>
+                <input type="text">
+            </div>
+            <div>
+                <label for="email">Email</label>
+                <br>
+                <input type="email">
+            </div>
+            <div>
+                <label for="password">Password</label>
+                <br>
+                <input type="text">
+            </div>
+            <button type="button">Submit</button>
+        </form>
+    </div>
 
     <!-- Script -->
     <script src="js/p_1.js"></script>

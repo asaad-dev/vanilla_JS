@@ -1,0 +1,138 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <!-- =================================== -->
+    <!-- correction Boostrap 4.6 -->
+    <!-- =================================== -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <title>Dézinguez un chat !</title>
+    <!-- typo google font -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Merienda:wght@400;700&display=swap" rel="stylesheet">
+    <!-- ma feuille de style -->
+    <link rel="stylesheet" href="css/styles_correction.css">
+  </head>
+  <body>
+    <!-- =================================== -->
+    <!-- en-tête -->
+    <!-- =================================== -->
+    <header>
+        <!-- nav  -->
+        <nav class="">
+           <div class="container">
+                <a href="index_boostrap_4.html">Adopte un chat !</a>
+           </div>
+        </nav> 
+        <!-- jumbotron avec h1 -->
+        <div class="jumbotron">
+            <h1>Dézinguez un chat, c'est trop bon !</h1>
+        </div>
+    </header>
+    <!-- =================================== -->
+    <!-- Main, contenu principal -->
+    <!-- =================================== -->
+    <main class="container bg-secondary">
+                    <!-- =================================== -->
+                    <!-- Section carousel et form-->
+                    <!-- =================================== -->
+        <section id="section-1">
+            <div class="row">
+                <div class="col-sm-12">
+                    <div id="carouselChats" class="carousel slide" data-ride="carousel">
+                        <!-- indicateurs du carousel -->
+                        <ol class="carousel-indicators">
+                          <li data-target="#carouselChats" data-slide-to="0" class="active"></li>
+                          <li data-target="#carouselChats" data-slide-to="1"></li>
+                          <li data-target="#carouselChats" data-slide-to="2"></li>
+                          <li data-target="#carouselChats" data-slide-to="3"></li>
+                          <li data-target="#carouselChats" data-slide-to="4"></li>
+                        </ol>
+                        <div class="carousel-inner">
+                            <!-- images -->
+                          <div class="carousel-item active">
+                            <img src="img/chat_1.jpg" class="d-block w-100" alt="dézingue un chat sushi">
+                            <div class="carousel-caption d-none d-md-block">
+                              <h5>Sushi</h5>
+                            </div>
+                          </div>
+                          <div class="carousel-item">
+                            <img src="img/chat_2.jpg" class="d-block w-100" alt="dézingue un chat maki">
+                            <div class="carousel-caption d-none d-md-block">
+                              <h5>Maki</h5>
+                            </div>
+                          </div>
+                          <div class="carousel-item">
+                            <img src="img/chat_3.jpg" class="d-block w-100" alt="dézingue un chat sahimi">
+                            <div class="carousel-caption d-none d-md-block">
+                              <h5>Sashimi</h5>
+                            </div>
+                          </div>
+                          <div class="carousel-item">
+                            <img src="img/chat_4.jpg" class="d-block w-100" alt="dézingue un chat yakitori">
+                            <div class="carousel-caption d-none d-md-block">
+                              <h5>Yakitori</h5>
+                            </div>
+                          </div>
+                          <div class="carousel-item">
+                            <img src="img/chat_5.jpg" class="d-block w-100" alt="dézingue un chat onigri">
+                            <div class="carousel-caption d-none d-md-block">
+                              <h5>Onigri</h5>
+                            </div>
+                          </div>
+                        </div><!-- fin des images, fin carousel-inner-->
+                        <a class="carousel-control-prev" href="#carouselChats" role="button" data-slide="prev">
+                          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                          <span class="sr-only">Précédent</span>
+                        </a>
+                        <a class="carousel-control-next" href="#carouselChats" role="button" data-slide="next">
+                          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                          <span class="sr-only">Suivant</span>
+                        </a>
+                      </div>
+                </div><!-- fin col -->
+                <div class="col-sm-12">
+                    <h2>Les chats à dézinguer</h2>
+                    <form action="#" method="GET" id="adopteChat">
+                        <div class="form-group">
+                            <label for="choix">Choix du chat :</label>
+                            <select name="choix" id="choix" class="form-control">
+                                <option value="">-- Choisissez votre chat --</option>
+                                <option value="sushi">Sushi</option>
+                                <option value="maki">Maki</option>
+                                <option value="sashimi">Sashimi</option>
+                                <option value="yakitori">Yakitori</option>
+                                <option value="onigri">Onigri</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="raison">Raison d'adoption :</label>
+                            <textarea name="raison" id="raison" cols="30" rows="10" class="form-control" placeholder="Saisissez ici les raisons pour lesquelles vous souhaitez dézinguer ce chat...">
+                            </textarea>
+                        </div>
+                        <div class="form-group">
+                            <input type="submit" class="btn btn-success btn-block" value="Dézinguez">
+                        </div>
+                    </form>
+                </div><!-- fin col -->
+            </div><!-- fin row -->
+        </section><!-- fin section 1 -->
+        <section id="section-2">
+            <div class="row">
+                <div class="col-sm-12">
+                    <h2>Nos chats à dézinguer</h2>
+                </div>
+                <div class="col-sm-12">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis rem voluptatem iste quibusdam laudantium provident aspernatur animi ducimus, quaerat ut ratione delectus necessitatibus ullam? Adipisci dignissimos expedita assumenda sunt optio.</p>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facilis deleniti mollitia suscipit? Dolores quis deleniti sunt perspiciatis eaque saepe alias vero rem minus ratione nisi repellat aliquam, iusto voluptatem cumque!</p>
+                </div>
+            </div><!-- fin row -->
+        </section><!-- fin section 2 -->
+    </main>
+    <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+  </body>
+</html>
